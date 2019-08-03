@@ -5,7 +5,7 @@ import time
 
 def check_mail():
     mail = imaplib.IMAP4_SSL('imap.gmail.com')
-    mail.login('testbotforemail@gmail.com', '1mahandas1')
+    mail.login('', '')
     mail.list()
     # Out: list of "folders" aka labels in gmail.
     mail.select("inbox") # connect to inbox.
@@ -19,7 +19,7 @@ def check_mail():
     #print(email_message['To']
     
     if((email_message['Subject'].lower() == 'schedule') and ('anuj' in email.utils.parseaddr(email_message['From']))):
-        os.system("C:\Windows\System32\cmd.exe /c C:/Users/mahan.das/Desktop/ELI_CS_Dateschedule.bat")
+        os.system("")
     mail.close()
 
 
