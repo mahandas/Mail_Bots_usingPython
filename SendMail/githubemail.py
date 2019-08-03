@@ -20,9 +20,9 @@ today = str(datetime.datetime.now().date())
 COMMASPACE = ', '
 text = "This is an automated python mail. The schedule has been updated in FinIQ400 in Eli_DateSchedule. Please find below the attached excel file. (Make sure the file first column is deleted before manual upload of the excel)"
 def main():
-    sender = 'mahan.d@finiq.com'
-    gmail_password = '1mahandas1'
-    recipients = ['eli@finiq.com']
+    sender = ''
+    gmail_password = ''
+    recipients = ['']
     
     # Create the enclosing (outer) message
     outer = MIMEMultipart()
@@ -32,7 +32,7 @@ def main():
     outer.preamble = 'You will not see this in a MIME-aware mail reader.\n'
 
     # List of attachments
-    attachments = ['E:/Attachment/ELI_Schedule.xlsx']
+    attachments = ['']
 
     # Add the attachments to the message
     for file in attachments:
