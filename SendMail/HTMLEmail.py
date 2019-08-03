@@ -18,26 +18,26 @@ from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 
 
-#img_attachment = 'C:/Users/mahan.das/AppData/Local/Programs/Python/Python36/bob.jpg'
-fname ='D:/Cbackup/Users/mahan.das/AppData/Local/Programs/Python/Python36/QuotesForTheDay.txt'
+#img_attachment = ''
+fname =''
 with open(fname) as f:
     content = f.readlines()
 content = [x.strip() for x in content]
-file_count_location='D:/Cbackup/Users/mahan.das/AppData/Local/Programs/Python/Python36/Count.txt'
+file_count_location=''
 file_count = open(file_count_location,encoding='utf-8')
 Count = file_count.read()
 file_count.close()
 today = str(datetime.datetime.now().date())
 COMMASPACE = ', '
 text = "This is an automated python mail with a HTML Page attached to it and also a new Quote of the day. Below is the summary of a play by Shakespeare."
-file1 = open('D:/Cbackup/Users/mahan.das/Desktop/HtmlFormail.txt',encoding='utf-8', errors='ignore')
+file1 = open('',encoding='utf-8', errors='ignore')
 html = file1.read()
 
 def main():
-    sender = 'mahan.d@finiq.com'
-    gmail_password = '1mahandas1'
+    sender = ''
+    gmail_password = ''
     #'namrata.bamb@finiq.com','bhumika.j@finiq.com','deepa.kulkarni@finiq.com','sarvanan.g@finiq.com','chandrakanth.e@finiq.com','yeshwanth.b.s@finiq.com','anuj.c@finiq.com','neelay.k@finiq.com',
-    recipients = ['namrata.bamb@finiq.com','bhumika.j@finiq.com','deepa.kulkarni@finiq.com','priyanka.s@finiq.com','chandrakanth.e@finiq.com','saurabh.n@finiq.com','anuj.c@finiq.com','pooja.singh@finiq.com','mahan.d@finiq.com','sanket.m@finiq.com','dipak.g@finiq.com']
+    recipients = ['']
     
     # Create the enclosing (outer) message
     outer = MIMEMultipart()
@@ -47,7 +47,7 @@ def main():
     outer.preamble = 'You will not see this in a MIME-aware mail reader.\n'
 
     # List of attachments
-    attachments = ['D:/Cbackup/Users/mahan.das/Desktop/text2CSV.txt']
+    attachments = ['']
 
     # Add the attachments to the message
     for file in attachments:
